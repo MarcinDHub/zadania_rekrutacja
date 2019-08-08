@@ -2,9 +2,13 @@ from decimal import Decimal as D
 
 
 def func(number, last_number, jump):
+    result = []
+
     while number <= last_number:
-        print(number)
+        result.append(number)
         number += jump
+
+    return(result)
 
 
 def main():
@@ -13,7 +17,7 @@ def main():
     last_number = D("5.5")
     jump = D("0.5")
 
-    func(first_number, last_number, jump)
+    print (func(first_number, last_number, jump))
 
 
 if __name__ == '__main__':
