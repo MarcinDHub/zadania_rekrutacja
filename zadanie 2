@@ -13,10 +13,10 @@ def func(number_list, n):
 
 
 def main():
-        number_list = [2, 3, 7, 4, 9]
-        n = 10
+	number_list = [2, 3, 7, 4, 9]
+	n = 10
 
-        func(number_list, n)
+	func(number_list, n)
 
 
 if __name__ == '__main__':
