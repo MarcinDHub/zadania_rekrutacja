@@ -1,0 +1,21 @@
+def func(first_code, last_code):
+    # delete '-' and convert to int
+    # add 1 to first code: we need to print only codes BETWEEN first and last
+    first_code = int(first_code.replace('-', '')) + 1
+    last_code = int(last_code.replace('-', ''))
+
+    for code in range(first_code, last_code):
+        # convert int to string and add '-' between second and third character
+        # print code
+        print(str(code)[:2] + '-' + str(code)[2:6])
+
+
+def main():
+        first_code = "79-900"
+        last_code = "80-155"
+
+        func(first_code, last_code)
+
+
+if __name__ == '__main__':
+    main()
