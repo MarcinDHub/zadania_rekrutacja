@@ -9,14 +9,14 @@ def func(number_list, n):
         else:
             missing_elements.append(i)
 
-    print(missing_elements)
+    return missing_elements
 
 
 def main():
-	number_list = [2, 3, 7, 4, 9]
-	n = 10
+    number_list = [2, 3, 7, 4, 9]
+    n = 10
 
-	func(number_list, n)
+    print(func(number_list, n))
 
 
 if __name__ == '__main__':
