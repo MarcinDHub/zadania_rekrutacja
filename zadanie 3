@@ -3,15 +3,15 @@ from decimal import Decimal as D
 
 def func(number, last_number, jump):
     while number <= last_number:
-        print(D(number))
-        number += D(jump)
+        print(number)
+        number += jump
 
 
 def main():
     # using Decimal class to reach exact precision in every example of input data
     first_number = D("2")
     last_number = D("5.5")
-    jump = D("0.5")
+    jump = D("0.6")
 
     func(first_number, last_number, jump)
 
